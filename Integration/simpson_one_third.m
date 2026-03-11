@@ -1,7 +1,7 @@
 clc; clearvars; close all;
 f = @(x) 1/(1+x.^2);
 a = -1; b = 1;
-N = 12;
+N = 12; %here N must be an even number to work.
 h = (b-a)/N;
 sum = 0;
 for i=1:N-1 
