@@ -3,7 +3,8 @@ clc; clearvars; close all;
 A = input("Enter matrix A: ");
 B = input("Enter matrix B: ");
 aug = [A B];
-n = length(A);
+n = size(aug);
+n = n(1);
 
 for i=1:n
     [maxValue, maxIndex] = max(abs(aug(i:n, i)));

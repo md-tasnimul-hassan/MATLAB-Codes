@@ -2,7 +2,8 @@ clc; clearvars; close all;
 A = input("Enter matrix A: ");
 B = input("Enter matrix B: ");
 aug = [A B];      
-n = length(A);
+n = size(aug);
+n = n(1);
 
 % looping through columns now. Don't care about the last column
 for i = 1:n-1
